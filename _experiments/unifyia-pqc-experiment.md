@@ -9,7 +9,7 @@ sidenav: papers
 sticky_sidenav: true
 
 pubdate: June 2025
-version: 1.0.3
+version: 1.0.4
 
 subnav:
   - text: Executive Summary
@@ -24,8 +24,8 @@ subnav:
     href: "#what-is-post-quantum-cryptography"
   - text: Why Post-Quantum Cryptography?
     href: "#why-post-quantum-cryptography"
-  - text: NIST and GSA PQC Standardization Efforts
-    href: "#nist-and-gsa-pqc-standardization-efforts"
+  - text: Federal PQC Efforts
+    href: "#federal-pqc-efforts"
   - text: Technical Architecture for GSA PQC Experiment
     href: "#technical-architecture-for-gsa-pqc-experiment"
   - text: System Components 
@@ -130,7 +130,7 @@ subnav:
 <li><a href="#target-audience">Target Audience</a></li>
 <li><a href="#what-is-post-quantum-cryptography">What is Post-Quantum Cryptography?</a></li>
 <li><a href="#why-post-quantum-cryptography">Why Post-Quantum Cryptography?</a></li>
-<li><a href="#nist-and-gsa-pqc-standardization-efforts">NIST and GSA PQC Standardization Efforts </a></li>
+<li><a href="#federal-pqc-efforts">Federal PQC Efforts </a></li>
 
 <li><a href="#technical-architecture-for-gsa-pqc-experiment">Technical Architecture for GSA PQC Experiment </a>
 <ol type="a">
@@ -279,7 +279,7 @@ subnav:
 
 <!-- Start of Section 7 -->
 
-## NIST and GSA PQC Standardization Efforts
+## Federal PQC Efforts
 
 <p align="justify">NIST launched the Post-Quantum Cryptography Standardization Project in 2016 to evaluate and standardize quantum-resistant public key algorithms. In July 2022, NIST announced the first group of algorithms selected for standardization:</p>
 
@@ -294,12 +294,9 @@ subnav:
 - FIPS 204 - Module-Lattice-Based Digital Signature Standard (ML-DSA) derived from CRYSTALS-DILITHIUM. 
 - FIPS 203 - Module-Lattice-Based Key-Encapsulation Mechanism Standard (ML-KEM) is derived from the CRYSTALS-KYBER KEM.
 
-<p align="justify">The use of post-quantum cryptographic (PQC) algorithms in issuing PIV (Personal Identity Verification) credentials is an emerging focus in federal cybersecurity. Although there are no public implementations yet, key federal agencies like GSA, NIST, and the NCCoE are laying the groundwork through research, guidance, and partnerships with industry. These efforts are aimed at preparing federal systems for a smooth transition once PQC standards are finalized.  </p>
+<p align="justify">The use of post-quantum cryptographic (PQC) algorithms in issuing PIV (Personal Identity Verification) credentials is an emerging focus in federal cybersecurity. Although there are no public implementations yet, key federal agencies like GSA and NIST are laying the groundwork through research, guidance, and partnerships with industry.   </p>
 
-<p align="justify">A notable example of forward-looking collaboration is the pilot program between Unifyia and GSA. This initiative explores the issuance of PQC-based PIV credentials, combining Unifyia’s flexible identity platform with NIST’s evolving cryptographic standards.  </p>
-
-<p align="justify">In this experiment, Unifyia has tested with CRYSTALS-DILITHIUM 2,3, and 5 algorithms.
-This pilot serves as a testing ground for implementing quantum-resistant algorithms within PIV systems and aims to validate the integration, performance, and security of PQC within existing federal identity frameworks. This work highlights the government’s commitment to future-proofing identity systems against quantum threats through early experimentation and public-private collaboration.  
+<p align="justify">The GSA PQC experiment explored the issuance of PIV credentials using post-quantum cryptographic (PQC) algorithms, leveraging Unifyia’s adaptable identity platform that is capable of supporting multiple algorithm types alongside NIST’s evolving cryptographic standards. A key goal of PQC readiness is crypto agility, the ability to switch between or combine classical, hybdrid, and PQC algorithms based on evolving threats or compliance requirements. In this experiment, Unifyia tested with classical (3K and 4K), hybrid (ED25519), and quantum-resistant algorithms (Dilithium Levels 2, 3, and 5. This experiment assessed how well these algorithms integrated with the existing federal identity framework, focusing on performance, interoperability, and security. 
  </p>
 
 <!-- Start of Section 8 -->
@@ -1239,7 +1236,7 @@ YubiKey 5.7 does not support the Dilithium algorithm.
 
 ## Conclusion 
 
-<p align="justify">The transition to a post-quantum cryptography (PQC) enabled PIV ecosystem marks a significant step toward future-proofing federal identity systems against emerging quantum threats. This experiment has demonstrated that while promising progress is being made through pilot implementations, the path to full adoption will necessarily be incremental. Encouraging results have been achieved in issuing and using PQC-enabled credentials on modern hardware platforms with vendor supported upgrades, validating their potential to support high-assurance digital signature use case as shown with this experiment.</p>
+<p align="justify">The transition to a post-quantum cryptography (PQC) enabled PIV ecosystem marks a significant step toward future-proofing federal identity systems against emerging quantum threats. This experiment has demonstrated that while promising progress is being made through pilot implementationsexperimenting, the path to full adoption will necessarily be incremental. Encouraging results have been achieved in issuing and using PQC-enabled credentials on modern hardware platforms with vendor supported upgrades, validating their potential to support high-assurance digital signature use case as shown with this experiment.</p>
 
 <img src="{{site.baseurl}}/assets/unifyia-pqc/32-implementation-gaps.png" alt="Implementation Gaps">
 
